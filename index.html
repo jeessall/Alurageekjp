@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | AluraGeek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./asset/css/base/base.css">
+    <link rel="stylesheet" href="./asset/css/home-page.css">
+    <link rel="stylesheet" href="./asset/css/components/header-home.css">
+    <link rel="stylesheet" href="./asset/css/components/images.css">
+    <link rel="stylesheet" href="./asset/css/components/inputs.css">
+    <link rel="stylesheet" href="./asset/css/components/buttons.css">
+    <link rel="stylesheet" href="./asset/css/components/banner.css">
+    <link rel="stylesheet" href="./asset/css/components/category.css">
+    <link rel="stylesheet" href="./asset/css/components/nav-footer.css">
+    <link rel="stylesheet" href="./asset/css/components/contact.css">
+    <link rel="stylesheet" href="./asset/css/components/home-by-develop.css">
+</head>
+<body>
+    <header>
+        <div class="borda container header flex">
+            <div class="borda header__box-image">
+                <img class="brand" src="./asset/img/svg/logo.svg" alt="Brand AluraGeek">
+            </div>
+            <div class="borda header__box flex">
+                <div class="borda header__button-container">
+                    <a id="btn-login" href="login.html"><button class="button header__login-button">Login</button></a>
+                </div>
+                <div class="flex">
+                    <div id="box-search" class="borda input__container input-search__container">
+                        <input id="search" class="borda input input-search" type="search" name="search" id="search"
+                            placeholder="O que deseja encontar?">
+                    </div>
+                    <div class="glass__container">
+                        <img id="glass" class="glass" src="./asset/img/svg/magnifyingGlass.svg" alt="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="borda banner">
+            <div class="banner__image"></div>
+            <div class="borda banner__box-description">
+                <h2 class="banner__description-title">Dezembro Promocional</h2>
+                <p class="banner__description-paragraph">Produtos selecionados com 33% de desconto</p>
+                <a href="#console"><button class="button banner__description-button">Ver Consoles</button></a>
+            </div>
+       </section>
+       
+       
+    </main>
+    <footer>
+        <div class="container box-info-footer flex flex--column">
+            <div class="borda nav-footer">
+                <nav class="borda nav-footer__box flex flex--column flex--center">
+                    <div class="borda nav-footer__box-brand">
+                        <img class="nav-footer__brand" src="./asset/img/svg/logo.svg" alt="Brand AluraGeek">
+                    </div>
+                    <ul class="borda nav-footer__box-itens">
+                        <li class="nav-footer__item"><a href="#">Quem somos nós</a></li>
+                        <li class="nav-footer__item"><a href="#">Política de privacidades</a></li>
+                        <li class="nav-footer__item"><a href="#">Programa fidelidade</a></li>
+                        <li class="nav-footer__item"><a href="#">Nossas lojas</a></li>
+                        <li class="nav-footer__item"><a href="#">Quero ser franqueado</a></li>
+                        <li class="nav-footer__item"><a href="#">Anuncie aqui</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="borda contact">
+                <h2 class="borda contact__title">Fale conosco</h2>
+                <form class="borda contact__form flex flex--column" action="">
+                    <fieldset>
+                        <div class="borda contact__input-container flex flex--column">
+                            <input id="name" name="name" class="borda shadow-input input contact__input" type="text" placeholder="Nome" data-type="name" required>
+                            <label class="borda contact__input-label" for="name">Nome</label>
+                            <span class="borda input-message-error">Este campo não pode estar vazio.</span>
+                        </div>
+                        <div class="borda contact__input-container flex flex--column">
+                            <textarea id="text" name="text" class="borda shadow-input contact__textarea" placeholder="Escreva sua ensagem" data-type="text" required></textarea>
+                            <label class="borda contact__textarea-label" for="text">Escreva sua mensagem</label>
+                            <span class="borda input-message-error">Este campo não pode estar vazio.</span>
+                        </div>
+                    </fieldset>
+                    <div class="borda contact__button-container">
+                        <button class="borda button contact__button">Enviar mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="by-develop flex flex--column flex--center">
+            <div class="borda by-develop__box">
+                <p class="by-develop__paragraph">Desenvolvido por Jéssica Pedroso</p>
+                <p class="by-develop__paragraph">2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./validators/validator.js"></script>
+    <script src="./services/settings-service.js"></script>
+    <script src="./services/products-service.js"></script>
+    <script src="./controllers/home-controller.js"></script>
+    <script src="./controllers/search-controller.js"></script>
+</body>
+</html>
